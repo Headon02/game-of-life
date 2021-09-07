@@ -158,6 +158,7 @@ def place():
     patt = [''.join(str(c) for c in lst) for lst in selection]
     p = '\n'.join(patt)
     print(p)
+    print("\n")
     
     x = question(f"Where would you like to place it on the x-axis, between 0 and {size[0]}?\n", 0, size[0])
     y = question(f"Where would you like to place it on the y-axis, between 0 and {size[1]}?\n", 0, size[1])
@@ -189,8 +190,6 @@ def draw():
         for i in range(maxlen-len(row)):
             row.append(" ")
             
-    print(maxlen)
-    print(drawing)
     
     x = question(f"Where would you like to place it on the x-axis, between 0 and {size[0]}?\n", 0, size[0])
     y = question(f"Where would you like to place it on the y-axis, between 0 and {size[1]}?\n", 0, size[1])
